@@ -3,7 +3,6 @@
 > A toy filesystem in safe Rust.
 
 [![CI](https://github.com/sviatil0/gridfs/actions/workflows/ci.yml/badge.svg)](https://github.com/sviatil0/gridfs/actions/workflows/ci.yml)
-[![crates.io](https://img.shields.io/crates/v/gridfs.svg)](https://crates.io/crates/gridfs)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![MSRV](https://img.shields.io/badge/MSRV-1.74-orange.svg)](Cargo.toml)
 
@@ -121,16 +120,8 @@ mutates, and rewrites the image file per invocation.
 
 ## Benchmarks
 
-Run `cargo bench` to see write, read, and walk throughput. Results vary by
-machine; representative numbers on an Apple M-series laptop:
-
-```text
-write/64KiB         ~ 1.5 GiB/s
-read/64KiB          ~ 3.0 GiB/s
-readdir-16          ~ 1 µs
-```
-
-(These are placeholders — please regenerate locally and update.)
+Run `cargo bench` to measure write, read, and directory-walk throughput on
+your own machine; results vary by hardware.
 
 ## Building & testing
 
